@@ -8,7 +8,7 @@ if [ -d /sdf ]; then
     export DOCS_SEARCH_BIN="${DOCS_SEARCH_BIN:-/sdf/group/lcls/ds/dm/apps/dev/bin}"
 elif [ -d /lustre/orion ]; then
     # OLCF (Frontier)
-    export DOCS_SEARCH_BIN="${DOCS_SEARCH_BIN:-/ccs/home/cwang31/.local/bin}"
+    export DOCS_SEARCH_BIN="${DOCS_SEARCH_BIN:-$HOME/.local/bin}"
 fi
 
 if [ -n "$DOCS_SEARCH_BIN" ]; then
